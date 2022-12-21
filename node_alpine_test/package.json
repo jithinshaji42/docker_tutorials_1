@@ -1,0 +1,17 @@
+{
+  "name": "dockerizing-node",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "esbuild --bundle src/index.js --outfile=build/app.js --minify --platform=node"
+  },
+  "dependencies": {
+    "esbuild": "0.12.15",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.9"
+  }
+}
